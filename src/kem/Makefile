@@ -32,4 +32,5 @@ include src/kem/lima/Makefile
 include src/kem/ledakem/Makefile
 include src/kem/threebears/Makefile
 include src/kem/titanium/Makefile
+include src/kem/ntru-hrss/Makefile
 # EDIT-WHEN-ADDING-KEM

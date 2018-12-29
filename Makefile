@@ -1,27 +1,33 @@
 # THESE SHOULD BE THE ONLY OPTIONS TO BE CONFIGURED BY THE PERSON COMPILING
 
-KEMS_TO_ENABLE?=frodokem_640_aes frodokem_640_cshake frodokem_976_aes frodokem_976_cshake \
-			   newhope_512_cca_kem newhope_1024_cca_kem \
-			   kyber512 kyber768 kyber1024 \
-			   bike1_l1 bike1_l3 bike1_l5 \
-			   bike2_l1 bike2_l3 bike2_l5 \
-			   bike3_l1 bike3_l3 bike3_l5 \
-			   sike_p503, sike_p751 \
-			   BIG_QUAKE_1 BIG_QUAKE_3 BIG_QUAKE_5 \
-			   ledakem_C1_N02 ledakem_C1_N03 ledakem_C1_N04 \
-			   ledakem_C3_N02 ledakem_C3_N03 ledakem_C3_N04 \
-			   ledakem_C5_N02 ledakem_C5_N03 ledakem_C5_N04 \
-			   saber_light_saber_kem saber_saber_kem saber_fire_saber_kem \
-			   lima_2p_1024_cca_kem lima_2p_2048_cca_kem lima_sp_1018_cca_kem lima_sp_1306_cca_kem lima_sp_1822_cca_kem lima_sp_2062_cca_kem \
-			   babybear_cca mamabear_cca papabear_cca babybear_ephem_cpa mamabear_ephem_cpa papabear_ephem_cpa \
-			   titanium_cca_std_kem titanium_cca_hi_kem titanium_cca_med_kem titanium_cca_super_kem
+#KEMS_TO_ENABLE?=frodokem_640_aes frodokem_640_cshake frodokem_976_aes frodokem_976_cshake \
+#			   newhope_512_cca_kem newhope_1024_cca_kem \
+#			   kyber512 kyber768 kyber1024 \
+#			   bike1_l1 bike1_l3 bike1_l5 \
+#			   bike2_l1 bike2_l3 bike2_l5 \
+#			   bike3_l1 bike3_l3 bike3_l5 \
+#			   sike_p503, sike_p751 \
+#			   BIG_QUAKE_1 BIG_QUAKE_3 BIG_QUAKE_5 \
+#			   ledakem_C1_N02 ledakem_C1_N03 ledakem_C1_N04 \
+#			   ledakem_C3_N02 ledakem_C3_N03 ledakem_C3_N04 \
+#			   ledakem_C5_N02 ledakem_C5_N03 ledakem_C5_N04 \
+#			   saber_light_saber_kem saber_saber_kem saber_fire_saber_kem \
+#			   lima_2p_1024_cca_kem lima_2p_2048_cca_kem lima_sp_1018_cca_kem lima_sp_1306_cca_kem lima_sp_1822_cca_kem lima_sp_2062_cca_kem \
+#			   babybear_cca mamabear_cca papabear_cca babybear_ephem_cpa mamabear_ephem_cpa papabear_ephem_cpa \
+#			   titanium_cca_std_kem titanium_cca_hi_kem titanium_cca_med_kem titanium_cca_super_kem ntru_hrss
+
+KEMS_TO_ENABLE?=newhope_1024_cca_kem ntru_hrss
 			   # EDIT-WHEN-ADDING-KEM
 
 KEM_DEFAULT?=newhope_1024_cca_kem
 
-SIGS_TO_ENABLE?=qTESLA_I qTESLA_III_size qTESLA_III_speed qTESLA_p_I qTESLA_p_III \
-                picnic_L1_FS picnic_L1_UR picnic_L3_FS picnic_L3_UR picnic_L5_FS picnic_L5_UR \
-                Dilithium_II_medium Dilithium_III_recommended Dilithium_IV_very_high # EDIT-WHEN-ADDING-SIG
+#SIGS_TO_ENABLE?=qTESLA_I qTESLA_III_size qTESLA_III_speed qTESLA_p_I qTESLA_p_III \
+#                picnic_L1_FS picnic_L1_UR picnic_L3_FS picnic_L3_UR picnic_L5_FS picnic_L5_UR \
+#                Dilithium_II_medium Dilithium_III_recommended Dilithium_IV_very_high # EDIT-WHEN-ADDING-SIG
+#
+
+SIGS_TO_ENABLE?=qTESLA_I
+			   # EDIT-WHEN-ADDING-KEM
 
 SIG_DEFAULT?=qTESLA_I
 

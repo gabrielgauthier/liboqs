@@ -99,6 +99,8 @@
 #define OQS_KEM_alg_newhope_512_cca_kem "NewHope-512-CCA-KEM"
 /** Algorithm identifier for NewHope-1024-CCA-KEM KEM. */
 #define OQS_KEM_alg_newhope_1024_cca_kem "NewHope-1024-CCA-KEM"
+/** Algorithm identifier for NTRU-HRSS KEM. */
+#define OQS_KEM_alg_ntru_hrss "ntru-hrss"
 /** Algorithm identifier for LightSaber-KEM. */
 #define OQS_KEM_alg_saber_light_saber_kem "LightSaber-KEM"
 /** Algorithm identifier for Saber-KEM. */
@@ -131,7 +133,7 @@
 #define OQS_KEM_alg_titanium_cca_super_kem "Titanium-CCA-super"
 // EDIT-WHEN-ADDING-KEM
 /** Number of algorithm identifiers above. */
-#define OQS_KEM_algs_length 52
+#define OQS_KEM_algs_length 53
 
 /**
  * Returns identifiers for available key encapsulation mechanisms in liboqs.  Used with OQS_KEM_new.
@@ -290,6 +292,7 @@ OQS_API void OQS_KEM_free(OQS_KEM *kem);
 #include <oqs/kem_ledakem.h>
 #include <oqs/kem_lima.h>
 #include <oqs/kem_newhopenist.h>
+#include <oqs/kem_ntru_hrss.h>
 #include <oqs/kem_saber.h>
 #include <oqs/kem_sike.h>
 #include <oqs/kem_threebears.h>
